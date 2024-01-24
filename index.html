@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Add this in the <head> section of your HTML document -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper"></div>
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a">M</i>
+                <div class="logo-text">Mohammed Shujad</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="Spiderman [1920×1080].jpg" alt="porfile pic">
+            </div>
+            <div class="hero-text"> 
+                <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                <h1>Mohammed Shujaduddin</h1>
+                <p> Dedicated and results-driven Software Engineer with a good expertise in Java backend development, seeking a challenging
+                    role where I can leverage my technical skills and problem-solving abilities to design, develop, and maintain high-performance software systems.
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn">Contact </a>
+                </div>
+               
+                <div class="social">
+                  <a href="#" ><i class='bx bxl-instagram'></i></a>
+                  <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                  <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- typed js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <!-- <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=documen.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.togglebtn("click");
+            nav.classList.toggle("open");
+
+        })
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var typed = new Typed(".input",{
+            strings:["Frontend Developer","UX Designer", "web Developer"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+            });
+        });
+
+    </script> -->
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var typed = new Typed(".input", {
+                strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+                typeSpeed: 70, 
+                backSpeed: 55,
+                loop: true
+            });s
+        });
+    </script>
+</body> 
+</html>
